@@ -16,8 +16,11 @@
 // write your code here
 
 
+func takeCont(continent: String, num: Int){
+    print( "\(continent) is a continent which contains \(num) countries.")
+}
 
-
+takeCont(continent: "Africa", num: 54)
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
  */
@@ -25,7 +28,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting(name: "Danny", "Hello")
+greeting(name: "Danny", greeting: "Hello")
 
 
 
@@ -33,7 +36,7 @@ greeting(name: "Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) {
     print("There are \(days) in \(month)")
 }
 
@@ -48,8 +51,11 @@ daysInMonth(month: "November", days: 30)
 // write your code here
 
 
+func threeFunc(num: Int, beverage: String, wall: String){
+    print("\(num) bottles of \(beverage) on the \(wall) wall.")
+}
 
-
+threeFunc(num: 24, beverage: "apple juice", wall: "kindergarten")
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
  */
